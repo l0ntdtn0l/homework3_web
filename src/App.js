@@ -100,19 +100,20 @@ function App() {
 // render(appState);
 
 // setTimeout(() => {
-//   appState.disabled = false;
-//   appState.items.push("Fourth");
-
-//   render(appState);
-// }, 1000)
-
-render({
-  second: {
-    text: "Second Button",
-    disabled: true,
-  },
-});
-
-export default App;
-
-
+  //   appState.disabled = false;
+  //   appState.items.push("Fourth");
+  
+  //   render(appState);
+  // }, 1000)
+  
+  render({
+    second: {
+      text: "Second Button",
+      disabled: true,
+    },
+  });
+  
+  export default App;
+  
+  
+  

@@ -4,6 +4,8 @@ import MyButton from "./MyButton";
 import MyComponent from "./MyComponent";
 import MySection from "./MySection";
 import MyList from "./MyList";
+import App from "./App";
+import "./style.css";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
@@ -20,6 +22,34 @@ const appState = {
   disabled: true,
   items: ["First", "Second", "Third"],
 }
+
+const smartPeople = [
+  { name: 'Johann Goethe', age: 82, IQ: 210 },
+  { name: 'Albert Einstein', age: 76, IQ: 205 },
+  { name: 'Leonardo da Vinci', age: 67, IQ: 180 },
+  { name: 'Isaac Newton', age: 84, IQ: 190 },
+  { name: 'James Maxwell', age: 48, IQ: 190 },
+  { name: 'Rudolf Clausius', age: 66, IQ: 190 },
+  { name: 'Nicolaus Copernicus', age: 70, IQ: 160 },
+  { name: 'Gottfried Leibniz', age: 70, IQ: 182 },
+  { name: 'William Sidis', age: 46, IQ: 200 },
+]
+
+const user = {
+  firstName: 'Elon',
+  lastName: 'Musk',
+  age: 49
+}
+
+// const UserForm = () => {
+//   return (
+//     <form>
+//       <label>Enter a username:</label>
+//       <input/>
+//     </form>
+//   );
+// }
+// ReactDOM.render(<UserForm />, document.querySelector('#root'));
 
 root.render(
       // Excercise 0:
@@ -68,52 +98,87 @@ root.render(
         //     ))}
         //   </ul>
 
-        //   <h1>Object</h1>
-        //   <ul>
-        //     {Object.keys(object).map((i) =>(
-        //       <li key={i}>
-        //         <strong>{i}: </strong>
-        //         {object[i]}
-        //       </li>
-        //     ))}
-        //   </ul>
+          // <h1>Object</h1>
+          // <ul>
+          //   {Object.keys(object).map((i) =>(
+          //     <li key={i}>
+          //       <strong>{i}: </strong>
+          //       {object[i]}
+          //     </li>
+          //   ))}
+          // </ul>
         // </section>
 
         // Excercise 1.0, 1.1:
       //  <MyComponent />
 
-);
-      // Excercise 1.2:
-// function render(props){
-//     root.render(
-//         <main>
-//               <MyButton text={props.text} disabled={props.disabled} />
-//               <MyList items={props.items}/>
-//         </main>
-//   );
-// }    
-// render(appState);
-    
-// setTimeout(() => {
-//         appState.disabled = false;
-//         appState.items.push("Fourth");
-      
-//         render(appState);
-// }, 1000)
+      // Excercise 4.1, 4.6:
+      // <>
+      //     <div>Green is the prime color of the world</div>
+      // </>
 
-function render({ second }){
-  root.render(
-  <main>
-    <MyButton />
-    <MyButton text={second.text} disabled={second.disabled}/>
-  </main>
-  );
-}
-render({
-  second: {
-    text: "Second Button",
-    disabled: true,
-  },
-});
+      // Excercise 4.2:
+      // <section>
+      //   <button style={{ margin: "10px 10px"}} type="primary" onClick={() => alert("Nguyen Duc Toan")}>
+      //   Show alert
+      //   </button>
+      // </section>
+
+      // Excercise 4.3:
+        //  <>
+        //   <ul>
+        //   {smartPeople.map(({ name, age, IQ }) => (
+        //     <li key={name}>{name} is {age} years old and has an IQ of {IQ}.</li>
+        //    ))}
+        //   </ul>
+        // </>
+
+      // Excercise 4.5:
+      <>
+        
+      </>
+);
       
-      
+      // Excercise 1.2:
+      // function render(props){
+        //     root.render(
+          //         <main>
+          //               <MyButton text={props.text} disabled={props.disabled} />
+          //               <MyList items={props.items}/>
+          //         </main>
+          //   );
+          // }    
+          // render(appState);
+          
+          // setTimeout(() => {
+            //         appState.disabled = false;
+            //         appState.items.push("Fourth");
+            
+  //         render(appState);
+  // }, 1000);
+  
+  
+  // Excercise 1.3:
+  // function render({ second }){
+    //   root.render(
+      //   <main>
+      //     <MyButton />
+      //     <MyButton text={second.text} disabled={second.disabled}/>
+      //   </main>
+      //   );
+      // }
+      // render({
+        //   second: {
+          //     text: "Second Button",
+          //     disabled: true,
+          //   },
+          // });
+          
+// Excercise 2.1, 2.2, 2.3:
+// root.render(<App />);
+          
+// Excercise 3:
+// root.render(<MyInput />);
+
+
+          

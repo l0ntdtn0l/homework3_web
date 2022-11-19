@@ -1,45 +1,46 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import MyButton from "./MyButton";
-import MyComponent from "./MyComponent";
-import MySection from "./MySection";
-import MyList from "./MyList";
-import App from "./App";
-import "./style.css";
+// import React from 'react';
+// import ReactDOM from 'react-dom/client';
+// import MyButton from "./MyButton";
+// import MyComponent from "./MyComponent";
+// import MySection from "./MySection";
+// import MyList from "./MyList";
+// import App from "./App";
+// import "./style.css";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
 
-const array = ["First", "Second", "Third"];
+// const root = ReactDOM.createRoot(document.getElementById('root'));
 
-const object = {
-    first: 1,
-    second: 2,
-    third: 3,
-};
+// const array = ["First", "Second", "Third"];
 
-const appState = {
-  text: "My Button",
-  disabled: true,
-  items: ["First", "Second", "Third"],
-}
+// const object = {
+//     first: 1,
+//     second: 2,
+//     third: 3,
+// };
 
-const smartPeople = [
-  { name: 'Johann Goethe', age: 82, IQ: 210 },
-  { name: 'Albert Einstein', age: 76, IQ: 205 },
-  { name: 'Leonardo da Vinci', age: 67, IQ: 180 },
-  { name: 'Isaac Newton', age: 84, IQ: 190 },
-  { name: 'James Maxwell', age: 48, IQ: 190 },
-  { name: 'Rudolf Clausius', age: 66, IQ: 190 },
-  { name: 'Nicolaus Copernicus', age: 70, IQ: 160 },
-  { name: 'Gottfried Leibniz', age: 70, IQ: 182 },
-  { name: 'William Sidis', age: 46, IQ: 200 },
-]
+// const appState = {
+//   text: "My Button",
+//   disabled: true,
+//   items: ["First", "Second", "Third"],
+// }
 
-const user = {
-  firstName: 'Elon',
-  lastName: 'Musk',
-  age: 49
-}
+// const smartPeople = [
+//   { name: 'Johann Goethe', age: 82, IQ: 210 },
+//   { name: 'Albert Einstein', age: 76, IQ: 205 },
+//   { name: 'Leonardo da Vinci', age: 67, IQ: 180 },
+//   { name: 'Isaac Newton', age: 84, IQ: 190 },
+//   { name: 'James Maxwell', age: 48, IQ: 190 },
+//   { name: 'Rudolf Clausius', age: 66, IQ: 190 },
+//   { name: 'Nicolaus Copernicus', age: 70, IQ: 160 },
+//   { name: 'Gottfried Leibniz', age: 70, IQ: 182 },
+//   { name: 'William Sidis', age: 46, IQ: 200 },
+// ]
+
+// const user = {
+//   firstName: 'Elon',
+//   lastName: 'Musk',
+//   age: 49
+// }
 
 // const UserForm = () => {
 //   return (
@@ -51,7 +52,7 @@ const user = {
 // }
 // ReactDOM.render(<UserForm />, document.querySelector('#root'));
 
-root.render(
+// root.render(
       // Excercise 0:
       // <p>Hello, <strong>JSX</strong></p>
 
@@ -134,10 +135,13 @@ root.render(
         // </>
 
       // Excercise 4.5:
-      <>
-        
-      </>
-);
+
+
+//       <React.StrictMode>
+//       <App />
+//       </React.StrictMode>
+
+// );
       
       // Excercise 1.2:
       // function render(props){
@@ -179,6 +183,43 @@ root.render(
           
 // Excercise 3:
 // root.render(<MyInput />);
+
+
+// Homework 1:
+// import React from 'react';
+// import ReactDOM from 'react-dom';
+// import App from './App';
+
+// ReactDOM.render(
+//   <App />,
+//   document.getElementById('root')
+// );
+
+// Homework 2:
+
+// import React from 'react';
+// import ReactDOM from 'react-dom';
+// // import './index.css';
+// import App from './App';
+// import * as serviceWorker from './serviceWorker';
+
+// ReactDOM.render(<App />, document.getElementById('root'));  
+
+// // If you want your app to work offline and load faster, you can change
+// // unregister() to register() below. Note this comes with some pitfalls.
+// // Learn more about service workers: https://bit.ly/CRA-PWA
+// serviceWorker.unregister();
+
+// Homework 3:
+
+import React from 'react';
+import ReactDOM from 'react-dom';
+import App from './App';
+
+ReactDOM.render(
+  <App />,
+  document.getElementById('root')
+);
 
 
           
